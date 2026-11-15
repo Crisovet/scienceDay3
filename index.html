@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Science Class VII – Reproduction: Fertilisation · Keyword Chain</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6fb;--ink:#1d2b4f;--mut:#5d6b8c;--card:#fff;--line:#cdd6e8;--key:#ffd84d;--keyi:#3a2d00;--ok:#1e9e5a;--bad:#d64545;--c:#0f7b6c;--M:#2f6fd6;--kw:#ff9f43;--kwi:#3b1d00;--rt:#7048e8;box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a2e;--ink:#e8edf9;--mut:#9aa7c7;--card:#1c2644;--line:#34426b;--key:#f2c230;--keyi:#2b2100;--c:#3cc9b4;--M:#6ea0f5;--kw:#f5a54f;--kwi:#2e1700;--rt:#9775fa}}
+:root[data-theme="dark"]{--bg:#121a2e;--ink:#e8edf9;--mut:#9aa7c7;--card:#1c2644;--line:#34426b;--key:#f2c230;--keyi:#2b2100;--c:#3cc9b4;--M:#6ea0f5;--kw:#f5a54f;--kwi:#2e1700;--rt:#9775fa}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Fredoka',system-ui,sans-serif;min-height:100vh;min-height:100dvh;touch-action:manipulation;overflow-x:hidden}
+main{max-width:640px;margin:0 auto;padding:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) calc(32px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left))}
+h1{font-size:1.75rem;margin:6px 0 2px;line-height:1.2}.sub{margin:0 0 12px;color:var(--mut);font-size:.95rem}
+button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px;position:sticky;top:0;z-index:10;background:var(--bg);padding:8px 0 6px}
+.hud{font-weight:600;white-space:nowrap}
+.back{border:2px solid var(--line);background:var(--card);border-radius:22px;padding:8px 16px;min-height:42px}
+.prog{height:8px;background:var(--line);border-radius:8px;overflow:hidden;margin:6px 0 10px}.prog i{display:block;height:100%;background:var(--c);transition:width .4s}
+.tt{font-size:1.45rem;font-weight:600;margin-top:4px;line-height:1.25}
+.sec{margin:18px 0 4px;font-size:1.05rem;font-weight:600;color:var(--c);display:flex;justify-content:space-between;align-items:center;gap:8px}
+.sec small{font-weight:500;color:var(--mut);font-size:.85rem}
+.row{display:flex;gap:12px;align-items:center;width:100%;text-align:left;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0;font-weight:500;font-size:1.2rem;min-height:56px;line-height:1.3}
+.row:active{border-color:var(--c)}.row:disabled{opacity:.5;cursor:not-allowed}.row.ok{border-color:var(--ok)}.row>span{width:22px;text-align:center;flex:none}
+.row b{margin-left:auto;color:var(--mut);font-size:.8rem;white-space:nowrap}
+.banner{background:var(--card);border:2px solid var(--ok);border-radius:14px;padding:12px 14px;margin:10px 0;line-height:1.45}
+.banner.wait{border-color:var(--line)}
+.who{font-weight:500;margin:0 0 6px}.link{background:none;border:0;color:var(--M);text-decoration:underline;padding:8px 6px;min-height:40px}
+.ask{margin:14px 0 8px;color:var(--mut);font-weight:500;font-size:1.2rem}.ask span{color:var(--ink);font-weight:600}
+.opts{display:grid;gap:10px}
+.opt{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:14px;text-align:left;font-weight:600;font-size:1.25rem;min-height:58px;overflow-wrap:anywhere}
+.opt:active{border-color:var(--c)}
+.opt.bad{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 14%,var(--card));animation:sh .3s;pointer-events:none}
+.opt.good{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,var(--card))}
+@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.end{background:var(--card);border-radius:16px;padding:14px;margin-top:14px;border-top:6px solid var(--ok)}
+.end h3{margin:0 0 6px;font-size:1.4rem}.end p{margin:8px 0;line-height:1.5;font-size:1.15rem}
+.mn{background:var(--key);color:var(--keyi);border-radius:10px;padding:8px 12px;font-weight:500;font-size:1.15rem}
+.go{background:var(--c);color:#fff;border:0;border-radius:22px;padding:12px 22px;font-weight:600;margin:12px 8px 0 0;min-height:46px}
+.kboard{background:var(--card);border-radius:16px;padding:14px 10px;display:flex;flex-wrap:wrap;align-items:center;row-gap:18px;min-height:110px}
+.node{background:var(--kw);color:var(--kwi);font-weight:600;padding:8px 12px;border-radius:12px;box-shadow:0 3px 0 rgba(0,0,0,.18);animation:pop .35s;font-size:1.2rem}
+.node.root{background:var(--rt);color:#fff;font-size:1.3rem}
+.arr{display:flex;flex-direction:column;align-items:center;min-width:104px;padding:0 4px;--L:#d6336c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .arr{--L:#e0457f}}
+:root[data-theme="dark"] .arr{--L:#e0457f}
+.arr b{font-size:1.25rem;font-weight:600;color:var(--L);background:none;border:0;padding:0 2px;text-align:center;line-height:1.2;margin-bottom:6px}
+.arr .ln{position:relative;width:100%;height:4px;background:var(--L);border-radius:2px}
+.arr .ln:after{content:"";position:absolute;right:-2px;top:-6px;border-left:12px solid var(--L);border-top:8px solid transparent;border-bottom:8px solid transparent}
+.arr.q b{font-size:1.3rem}
+.node.qn{background:var(--c);color:#fff;font-size:1.1rem}.arr.s{min-width:34px}.arr.s b{display:none}.arr.s .ln{background:var(--mut)}.arr.s .ln:after{border-left-color:var(--mut)}.qh{margin:10px 0 6px;font-weight:600;color:var(--c)}
+.arr.q .ln{background:repeating-linear-gradient(90deg,var(--L) 0 6px,transparent 6px 10px)}.arr.q .ln:after{border-left-color:var(--L)}
+@keyframes pop{from{transform:translateY(-8px) scale(.6);opacity:0}to{transform:none;opacity:1}}
+.node.slot{background:transparent;color:var(--mut);border:2px dashed var(--line);box-shadow:none;min-width:48px;text-align:center}
+.node.slot.cur{border-color:var(--c);color:var(--c)}
+.hint{margin:14px 0 8px;color:var(--mut);font-weight:500;font-size:1.1rem}
+.tag{font-size:.8rem;background:var(--key);color:var(--keyi);border-radius:8px;padding:2px 8px;margin-left:6px;white-space:nowrap}
+.arr.fut{opacity:.55}
+[hidden]{display:none!important}
+.ov{position:fixed;inset:0;z-index:50;background:rgba(10,16,28,.65);display:grid;place-items:center;padding:16px;overflow-y:auto}
+.mod{width:min(440px,100%);background:var(--card);border:3px solid var(--ink);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.mod h2{margin:0}.mod p{margin:0;color:var(--mut)}.mod label{display:flex;flex-direction:column;gap:4px;font-weight:500;color:var(--mut);font-size:.9rem}
+.mod input{font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:10px;padding:11px 12px;min-width:0;width:100%}
+.ph{display:flex;border:2px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg)}.ph i{font-style:normal;padding:11px 12px;background:var(--key);color:var(--keyi);font-weight:600}.ph input{border:0;border-radius:0;background:transparent}
+.err{color:var(--bad)!important;font-weight:600;min-height:1.3em}
+.mod .go{background:var(--M);margin:6px 0 0;padding:14px 18px;font-size:1.1rem;width:100%}
+@media(max-width:380px){.arr{min-width:88px}.arr b{font-size:1.1rem}.arr.q b{font-size:1.15rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body><main id="app"></main>
+<div class="ov" id="ov" hidden><form class="mod" id="f" novalidate><h2>Before you begin</h2><p>Enter your details to start.</p><label>Name<input id="fn" autocomplete="name" placeholder="Full name"></label><label>Class<input id="fc" inputmode="numeric" maxlength="2" placeholder="e.g. 7"></label><label>Phone Number<span class="ph"><i>+91</i><input id="fp" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number"></span></label><p class="err" id="fe" role="alert"></p><button class="go">Start</button></form></div>
+<script>
+const TITLE="Reproduction: Fertilisation";
+
+/* ---------- Keyword chain data ----------
+   part ~ root ~ title ~ steps ~ tail (optional) ~ mnemonic (optional)
+   steps = label|correct|wrong1|wrong2|wrong3|wrong4 ; next step ...
+   Every option starts with the same first 3 letters as the correct answer. */
+const RAW=[
+"A~Internal fertilisation~How is internal fertilisation different from external fertilisation? Explain with examples.~kahan hota hai?|Inside female body|Inside male body|Inside the nest|Inside the water|Inside the egg;gametes kaise fuse hote hain?|Male and female gametes fuse inside|Male and female gametes fuse outside|Male and male gametes fuse inside|Male and female gametes never fuse|Male and female gametes divide inside;survival chances kaise hain?|High, as zygote is protected|High, as zygote is exposed|High, as zygote is eaten|High, as zygote is dried|High, as zygote is lost;examples kya hain?|Humans, cows, dogs|Humans, cows, frogs|Humans, fish, dogs|Humans, frogs, fish|Humans, hens, frogs;External fertilisation^kahan hota hai?|Outside female body|Outside male body|Outside the nest|Outside the lungs|Outside the school;gametes kaise fuse hote hain?|Male and female gametes fuse outside|Male and female gametes fuse inside|Male and male gametes fuse outside|Male and female gametes never fuse|Male and female gametes divide outside;survival chances kaise hain?|Usually low, as eggs face predators|Usually low, as eggs are protected|Usually high, as eggs face predators|Usually high, as eggs are protected|Usually same, as eggs face predators;examples kya hain?|Frogs, fish|Frogs, dogs|Frogs, cows|Frogs, humans|Frogs, birds~~Inside = Protected = High · Outside = Exposed = Low~Internal vs External",
+"B~Fertilisation in humans~Explain the process of fertilisation in humans.~pehle kaun enter karta hai?#pehle kaun enter?|Sperms|Species|Spectacles|Specimen|Spelling;kisme enter karte hain?|Female reproductive system|Female digestive system|Female nervous system|Female respiratory system|Female circulatory system;kahan se swim karte hain?#kahan se swim?|Through the uterus|Through the ureter|Through the urethra|Through the umbilical cord|Through the throat;kahan pahunchte hain?|The oviduct|The ovary|The ovule|The vagina|The kidney;egg ho to kya hoga?#egg ho to?|One sperm fuses|One seed fuses|One spore fuses|One bud fuses|One leaf fuses;kisse fuse hoga?|Egg|Eggplant|Eggshell|Eggnog|Eggcup;nuclei ka kya hua?|Fused into one|Fused into two|Fused into three|Fused into four|Fused into five;kya banega?|Zygote|Zygospore|Zygomatic|Zygoma|Zygodactyl;organism ka konsa cell?|First cell|Firewall|Firmness|Fireside|Firework~of the new organism~Enter, Swim, Oviduct, Fuse, Zygote~Fertilisation in humans"
+];
+const PN={A:"Part A · Question 3",B:"Part B · Question 5"},cn={A:0,B:0};
+const K=RAW.map(r=>{const p=r.split("~");cn[p[0]]++;return{part:p[0],id:p[0]+cn[p[0]],root:p[1],title:p[2],steps:p[3].split(";").map(s=>{const a=s.split("|");let l=a[0],br="";const q=l.indexOf("^");if(q>0){br=l.slice(0,q);l=l.slice(q+1)}let sq=l;const h=l.indexOf("#");if(h>0){sq=l.slice(h+1);l=l.slice(0,h)}return{l,sq,br,a:a[1],o:a.slice(1)}}),tail:p[4]||"",mn:p[5]||"",short:p[6]||p[1]}});
+
+/* Each topic = 3 activities: chain, order the questions, order the keywords */
+const ACT=[];K.forEach(d=>{ACT.push({t:'c',d});ACT.push({t:'q',d});ACT.push({t:'k',d})});
+const UNLOCK_ALL=false; /* TEST MODE: set to false to lock topics in order */
+const SUF={c:'',q:' (question order)',k:' (keyword order)'};
+
+/* ---------- Setup / storage ---------- */
+const URL_="https://script.google.com/macros/s/AKfycbypo-5ThjzEFYh1t-dlCp94v01kU1wpxnu1WCNKLDgxfA3KXuN8Nh7c_XdiBqhTAfyxGA/exec";
+const app=document.getElementById("app"),$=id=>document.getElementById(id);
+let U=null,P={k:{},sent:0,t:0},lt=Date.now(),sending=0,G;
+try{U=JSON.parse(localStorage.getItem('sci7-u'))}catch(e){}
+try{const s=JSON.parse(localStorage.getItem('sci7-fert-p1'));if(s)P=Object.assign(P,s)}catch(e){}
+const save=()=>{try{localStorage.setItem('sci7-fert-p1',JSON.stringify(P))}catch(e){}};
+const sh=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const cntDone=()=>ACT.filter((_,i)=>P.k[i]!=null).length;
+const complete=()=>cntDone()==ACT.length;
+const addTime=()=>{P.t=(P.t||0)+Math.min(Math.round((Date.now()-lt)/1000),600);lt=Date.now()};
+
+/* ---------- Details form ---------- */
+function ask(){$('ov').hidden=false;$('fe').textContent='';if(U){$('fn').value=U.n;$('fc').value=U.c;$('fp').value=U.p}$('fn').focus()}
+$('fc').oninput=e=>e.target.value=e.target.value.replace(/\D/g,'');$('fp').oninput=e=>e.target.value=e.target.value.replace(/\D/g,'');
+$('f').onsubmit=e=>{e.preventDefault();const n=$('fn').value.trim(),c=$('fc').value.trim(),p=$('fp').value.trim(),m=$('fe');
+ if(!n){m.textContent='Please enter your name.';return}if(!/^\d{1,2}$/.test(c)){m.textContent='Please enter your class as a number, for example 7.';return}if(!/^\d{10}$/.test(p)){m.textContent='Please enter a 10-digit phone number.';return}
+ U={n,c,p};try{localStorage.setItem('sci7-u',JSON.stringify(U))}catch(x){}$('ov').hidden=true;home()};
+
+/* ---------- Sending: ONLY when the whole chapter is complete ---------- */
+function tally(){let s=0,t=0,good=[],rev=[];
+ ACT.forEach((a,i)=>{const d=a.d,v=P.k[i]||0,n=d.steps.length;s+=v;t+=n;(v==n?good:rev).push(d.short+SUF[a.t])});
+ return{s,t,good,rev}}
+function push(){
+ sending=1;const r=tally(),sec=P.t||0;
+ const p={name:U.n,class:U.c,Class:U.c,className:U.c,studentClass:U.c,phone:U.p,Phone:U.p,quiz:"Science VII – "+TITLE+" (Keyword Chain)",score:String(r.s),total:String(r.t),percentage:(r.s/r.t*100).toFixed(1),timeTaken:String(sec),timeFormatted:Math.floor(sec/60)+"m "+sec%60+"s",topicsCorrect:r.good.join(", "),topicsRevise:r.rev.join(", "),photoAttached:"No",photoCount:"0"};
+ let fr=$('subFrame');if(!fr){fr=document.createElement('iframe');fr.name=fr.id='subFrame';fr.style.display='none';fr.setAttribute('aria-hidden','true');document.body.appendChild(fr)}
+ let fin=0,tm;const ok=()=>{if(fin)return;fin=1;clearTimeout(tm);fr.onload=null;P.sent=1;save();sending=0;const e=$('st');if(e)e.textContent=`Chapter score ${r.s} / ${r.t} sent to your teacher ✓`};
+ tm=setTimeout(ok,60000);const t0=Date.now();fr.onload=()=>setTimeout(ok,Math.max(0,600-(Date.now()-t0)));
+ const f=document.createElement('form');f.method='POST';f.action=URL_;f.target='subFrame';f.style.display='none';
+ Object.keys(p).forEach(n=>{const i=document.createElement('input');i.type='hidden';i.name=n;i.value=p[n];f.appendChild(i)});
+ document.body.appendChild(f);f.submit();f.remove()}
+function checkChapter(){
+ if(!complete())return `<p class="st">${cntDone()} of ${ACT.length} activities done — finish all to send your score.</p>`;
+ if(P.sent)return `<p class="st" id="st">Chapter complete ✓ Score already sent.</p>`;
+ if(!sending)push();
+ return `<p class="st" id="st"><b>Chapter complete! 🎉</b> Sending chapter score…</p>`}
+function resend(){push();home()}
+
+/* ---------- Chapter page ---------- */
+function home(){if(!U){ask();return}
+ let h=`<h1>${TITLE}</h1><p class="sub">Keyword Chain · Science Class VII</p><p class="who">${U.n} · Class ${U.c} <button class="link" onclick="ask()">Change</button></p><div class="prog"><i style="width:${cntDone()/ACT.length*100}%"></i></div>`;
+ if(complete())h+=P.sent?`<div class="banner">🎉 Chapter complete · score sent ✓</div>`:`<div class="banner wait">🎉 Chapter complete! ${sending?'Sending score…':'Score not confirmed yet.'} <button class="link" onclick="resend()">Send again</button></div>`;
+ h+=`<p class="sub" style="margin:8px 0 0">Finish a topic to unlock the next one. Your score is sent once, when every topic is complete.</p>`;
+ let last="";
+ ACT.forEach((a,i)=>{const d=a.d;
+  if(d.part!=last){last=d.part;const L=ACT.map((x,j)=>[x,j]).filter(z=>z[0].d.part==d.part);h+=`<div class="sec">${PN[d.part]} <small>${L.filter(z=>P.k[z[1]]!=null).length}/${L.length}</small></div>`}
+  const ok=P.k[i]!=null,open=UNLOCK_ALL||ok||i==0||P.k[i-1]!=null;
+  const lab=a.t=='c'?`${d.id} · ${d.title}`:`${d.id} · ${d.short}<span class="tag">${a.t=='q'?'Questions given · pick keywords':'Keywords given · pick questions'}</span>`;
+  h+=`<button class="row${ok?' ok':''}" ${open?`onclick="kplay(${i})"`:'disabled'}><span>${ok?'✓':open?'▶':'🔒'}</span><div>${lab}</div>${ok?`<b>${P.k[i]}/${d.steps.length}</b>`:''}</button>`});
+ app.innerHTML=h;window.scrollTo(0,0)}
+
+/* ================= KEYWORD CHAIN ================= */
+function kplay(i){if(ACT[i].t!='c')return oplay(i);lt=Date.now();G={i,s:0,m:0,first:0,got:[],lock:0};kdraw()}
+function kdraw(){G.lock=0;
+ const d=ACT[G.i].d,st=d.steps[G.s];
+ let b=`<span class="node root">${d.root}</span>`;
+ const NB=x=>`<span style="flex-basis:100%;height:0"></span><span class="node root">${x}</span>`;
+ G.got.forEach((g,k)=>{if(d.steps[k].br)b+=NB(d.steps[k].br);b+=`<span class="arr"><b>${d.steps[k].l}</b><span class="ln"></span></span><span class="node">${g}</span>`});
+ const fin=G.s>=d.steps.length;
+ if(!fin&&st.br)b+=NB(st.br);
+ if(!fin)b+=`<span class="arr q"><b>${st.l}</b><span class="ln"></span></span>`;
+ let h=`<div><div class="top"><button class="back" onclick="home()">‹ Topics</button><span class="hud">Step ${Math.min(G.s+1,d.steps.length)} of ${d.steps.length}</span></div>
+ <div class="tt">${d.id} · ${d.title}</div><div class="prog"><i style="width:${G.s/d.steps.length*100}%"></i></div><div class="kboard">${b}</div>`;
+ if(!fin){h+=`<div class="ask"><span>${st.br||(G.got.length?G.got[G.got.length-1]:d.root)}</span> ${st.l}</div><div class="opts">`;
+  sh(st.o).forEach(o=>h+=`<button class="opt" data-a="${o===st.a?1:0}" onclick="kpick(this)">${o}</button>`);h+='</div>'}
+ else{const n=d.steps.length,qc=d.steps.map((x,k)=>(x.br?`<span style="flex-basis:100%;height:0"></span>`:(k?`<span class="arr s"><b></b><span class="ln"></span></span>`:''))+`<span class="node qn">${x.sq}</span>`).join(''),kc=`<span class="node root">${d.root}</span>`+d.steps.map(x=>(x.br?`<span style="flex-basis:100%;height:0"></span>`+`<span class="node root">${x.br}</span>`:'')+`<span class="arr s"><b></b><span class="ln"></span></span>`+`<span class="node">${x.a}</span>`).join(''),sent=d.root+" "+d.steps.map(s=>(s.br?s.br+" ":"")+s.l+" "+s.a).join(" ")+(d.tail?" "+d.tail:"")+".",nx=G.i+1<ACT.length?G.i+1:null;
+  P.k[G.i]=Math.max(P.k[G.i]||0,G.first);addTime();save();
+  const status=checkChapter();
+  h+=`<div class="end"><h3>${G.first==n?'Perfect chain! ⭐':'Chain complete! 👏'}</h3><p><b>${G.first}</b> of ${n} keywords right on the first try.</p><p class="qh">Keywords</p><div class="kboard">${kc}</div><p class="qh">Questions</p><div class="kboard">${qc}</div>${status}
+  <button class="go" onclick="kplay(${G.i})">Play again</button><button class="go" onclick="${nx!=null?`kplay(${nx})`:`home()`}">${nx!=null?'Next activity':'Back to chapter'}</button></div>`}
+ app.innerHTML=h+'</div>';window.scrollTo(0,0)}
+function kpick(el){if(G.lock)return;
+ if(el.dataset.a=="1"){G.lock=1;const st=ACT[G.i].d.steps[G.s];if(!G.m)G.first++;G.m=0;G.got.push(st.a);G.s++;el.classList.add("good");setTimeout(kdraw,450)}
+ else{G.m++;el.classList.add("bad")}}
+
+/* ================= ORDERING (questions / keywords) ================= */
+function oplay(i){lt=Date.now();const a=ACT[i],d=a.d,items=d.steps.map(s=>a.t=='k'?s.l:s.a);
+ let p;do{p=sh(items.map((x,k)=>({x,k})))}while(items.length>1&&p.every((e,k)=>e.k==k));
+ G={i,s:0,m:0,first:0,lock:0,pool:p,items,used:{}};odraw()}
+function odraw(){G.lock=0;
+ const a=ACT[G.i],d=a.d,n=d.steps.length,isQ=a.t=='q',fin=G.s>=n;
+ const NB=x=>`<span style="flex-basis:100%;height:0"></span><span class="node root">${x}</span>`;
+ let b=`<span class="node root">${d.root}</span>`;
+ d.steps.forEach((x,k)=>{if(x.br)b+=NB(x.br);
+  if(a.t=='q'){b+=`<span class="arr${k==G.s&&!fin?' q':k>G.s?' fut':''}"><b>${x.l}</b><span class="ln"></span></span>`;
+   b+=k<G.s?`<span class="node">${G.items[k]}</span>`:`<span class="node slot${k==G.s?' cur':''}">?</span>`}
+  else{b+=`<span class="arr${k==G.s&&!fin?' q':k>G.s?' fut':''}"><b>${k<G.s?G.items[k]:'?'}</b><span class="ln"></span></span><span class="node">${x.a}</span>`}});
+ let h=`<div><div class="top"><button class="back" onclick="home()">‹ Topics</button><span class="hud">Step ${Math.min(G.s+1,n)} of ${n}</span></div>
+ <div class="tt">${d.id} · ${a.t=='q'?'Questions given · pick the keywords':'Keywords given · pick the questions'}</div><div class="prog"><i style="width:${G.s/n*100}%"></i></div><div class="kboard">${b}</div>`;
+ if(!fin){
+  const stp=d.steps[G.s];
+  h+=a.t=='q'?`<div class="ask"><span>${stp.br||(G.s?G.items[G.s-1]:d.root)}</span> ${stp.l}</div><div class="hint" style="margin-top:0">Pick the correct keyword from the list.</div><div class="opts">`
+  :`<div class="ask">Which question leads to <span>${stp.a}</span>?</div><div class="hint" style="margin-top:0">Pick the correct question from the list.</div><div class="opts">`;
+  G.pool.forEach((e,k)=>{if(!G.used[k])h+=`<button class="opt" data-k="${k}" onclick="opick(this)">${e.x}</button>`});
+  h+='</div>'}
+ else{
+  const qc=d.steps.map((x,k)=>(x.br?`<span style="flex-basis:100%;height:0"></span>`:(k?`<span class="arr s"><b></b><span class="ln"></span></span>`:''))+`<span class="node qn">${x.sq}</span>`).join(''),
+  kc=`<span class="node root">${d.root}</span>`+d.steps.map(x=>(x.br?`<span style="flex-basis:100%;height:0"></span><span class="node root">${x.br}</span>`:'')+`<span class="arr s"><b></b><span class="ln"></span></span><span class="node">${x.a}</span>`).join(''),
+  nx=G.i+1<ACT.length?G.i+1:null;
+  P.k[G.i]=Math.max(P.k[G.i]||0,G.first);addTime();save();
+  const status=checkChapter();
+  h+=`<div class="end"><h3>${G.first==n?'Perfect order! ⭐':'Well done! 👏'}</h3><p><b>${G.first}</b> of ${n} in the right place on the first try.</p><p class="qh">Keywords</p><div class="kboard">${kc}</div><p class="qh">Questions</p><div class="kboard">${qc}</div>${status}
+  <button class="go" onclick="kplay(${G.i})">Play again</button><button class="go" onclick="${nx!=null?`kplay(${nx})`:`home()`}">${nx!=null?'Next activity':'Back to chapter'}</button></div>`}
+ app.innerHTML=h+'</div>';window.scrollTo(0,0)}
+function opick(el){if(G.lock)return;const k=+el.dataset.k;
+ if(G.pool[k].x===G.items[G.s]){G.lock=1;if(!G.m)G.first++;G.m=0;G.used[k]=1;G.s++;el.classList.add("good");setTimeout(odraw,350)}
+ else{G.m++;el.classList.add("bad")}}
+
+home();
+</script></body></html>
